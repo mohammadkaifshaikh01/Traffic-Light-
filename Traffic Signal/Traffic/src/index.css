@@ -1,0 +1,71 @@
+/* Index or App level CSS */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.traffic-light {
+  width: 120px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 4px solid #222;
+  border-radius: 12px;
+  padding: 10px;
+  background: #222;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.traffic-light .light {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: background-color 1s ease-in-out, transform 0.3s ease;
+}
+
+.traffic-light .green {
+  background-color: #333;
+  box-shadow: none;
+}
+
+.traffic-light .yellow {
+  background-color: #333;
+  box-shadow: none;
+}
+
+.traffic-light .red {
+  background-color: #333;
+  box-shadow: none;
+}
+
+.traffic-light .green.active {
+  background-color: green;
+  box-shadow: 0 0 15px green, 0 0 30px darkgreen;
+  transform: scale(1.1);
+}
+
+.traffic-light .yellow.active {
+  background-color: yellow;
+  box-shadow: 0 0 15px yellow, 0 0 30px gold;
+  transform: scale(1.1);
+}
+
+.traffic-light .red.active {
+  background-color: red;
+  box-shadow: 0 0 15px red, 0 0 30px darkred;
+  transform: scale(1.1);
+}
